@@ -14,3 +14,18 @@ export default class Menu {
     return this.display === 'block'
   }
 }
+
+// var Menu = function () {
+//   function Menu () {}
+//   Menu.prototype.display = 'none';
+//   Menu.prototype.show = function () {
+//     this.display = 'block';
+//   }
+//   Menu.prototype.hide = function () {
+//     this.display = 'none';
+//   }
+//   Menu.prototype.isShow = function () {
+//     return this.display === 'block';
+//   }
+//   return Menu;
+// }();

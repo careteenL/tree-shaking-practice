@@ -4,7 +4,7 @@ var path = require('path')
 module.exports = {
   // 入口文件地址，不需要写完，会自动查找
   entry: path.join(__dirname, 'src/main.js'),
-  output: {filename: 'use-uglify/webpack.bundle.js'},
+  output: {filename: 'loose-uglify/webpack.bundle.js'},
   module: {
     rules: [
       {

@@ -1,0 +1,1 @@
+"use strict";function post(){console.log("do post")}goog.provide("util"),post.prototype.before=function(){console.log("before")},goog.provide("menu"),goog.provide("main"),goog.require("util"),goog.require("menu");var baz=function(){post();return console.log(1),1};baz();
