@@ -4,7 +4,7 @@ var path = require('path')
 module.exports = {
   // 入口文件地址，不需要写完，会自动查找
   entry: path.join(__dirname, 'src/main.js'),
-  output: {filename: 'use-uglify/webpack.bundle.js'},
+  output: {filename: 'unused-uglify/webpack.bundle.js'},
   module: {
     rules: [
       {
@@ -19,15 +19,15 @@ module.exports = {
         NODE_ENV: 'production'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      beautify: false,
-      comments: false,
-      compress: {
-        warnings: false,
-        collapse_vars: true,
-        reduce_vars: true
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   beautify: false,
+    //   comments: false,
+    //   compress: {
+    //     warnings: false,
+    //     collapse_vars: true,
+    //     reduce_vars: true
+    //   }
+    // }),
     new webpack.optimize.ModuleConcatenationPlugin()
   ]
 }
