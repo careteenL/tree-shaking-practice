@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   // 入口文件地址，不需要写完，会自动查找
   entry: path.join(__dirname, 'src/main.js'),
-  output: {filename: 'bundle-use-opt.js'},
+  output: {filename: 'bundle-specific.js'},
   module: {
     rules: [
       {
