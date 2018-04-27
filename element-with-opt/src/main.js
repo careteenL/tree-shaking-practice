@@ -4,8 +4,12 @@ import Vue from 'vue'
 import App from './App'
 
 import {Button} from 'element-ui'
-
 import 'element-ui/lib/theme-chalk/index.css'
+
+// 更具体
+// import {Button} from 'element-ui/lib/button.js'
+// import 'element-ui/lib/theme-chalk/base.css'
+// import 'element-ui/lib/theme-chalk/button.css'
 
 Vue.config.productionTip = false
 
